@@ -15,5 +15,9 @@ const server =http.createServer((req, res) =>
     {
         res.end("Welcome to my Node Js project");
     }
+    else{
+        res.writeHead(404);
+        res.end("error found page doesn't exist");
+    }
 });
 server.listen(8000);
